@@ -1,3 +1,4 @@
+import 'package:final_flutter_app/src/screens/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:final_flutter_app/src/screens/contacto.dart';
@@ -19,7 +20,11 @@ class HomeScreen extends StatelessWidget {
               title: Text('Inicio'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.share_up),
+              icon: Icon(CupertinoIcons.folder_open),
+              title: Text('Material'),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.phone_solid),
               title: Text('Contactanos'),
             ),
           ],
@@ -32,6 +37,8 @@ class HomeScreen extends StatelessWidget {
                   case 0:
                     return WidgetsScreen();
                   case 1:
+                    return MaterialScreen();
+                  case 2:
                     return ContactoScreen();
                 }
                 return WidgetsScreen();

@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class ContactoScreen extends StatelessWidget {
-  const ContactoScreen({Key key}) : super(key: key);
+class MaterialScreen extends StatelessWidget {
+  const MaterialScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class ContactoScreen extends StatelessWidget {
         backgroundColor: CupertinoColors.systemGroupedBackground,
         child: CustomScrollView(slivers: <Widget>[
           CupertinoSliverNavigationBar(
-            largeTitle: Text('Contacto'),
+            largeTitle: Text('Material'),
           ),
           SliverList(
             delegate: SliverChildListDelegate([
@@ -22,20 +22,7 @@ class ContactoScreen extends StatelessWidget {
                   color: CupertinoColors.systemBackground,
                 ),
                 child: Column(
-                  children: <Widget>[
-                    Container(
-                      height: 40.0,
-                      // color: CupertinoColors.lightBackgroundGray,
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
-                      child: Text(
-                        'Ingresa Correo y Contraseña:',
-                        style: CupertinoTheme.of(context)
-                            .textTheme
-                            .navTitleTextStyle,
-                      ),
-                    ),
-                  ],
+                  children: <Widget>[],
                 ),
               ),
             ]),
