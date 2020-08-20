@@ -35,6 +35,12 @@ class WidgetsScreen extends StatelessWidget {
                             .navTitleTextStyle,
                       ),
                     ),
+                    Container(
+                      height: 2.0,
+                      color: CupertinoColors.lightBackgroundGray,
+                      alignment: Alignment.centerLeft,
+                      padding: EdgeInsets.symmetric(horizontal: 40.0),
+                    ),
                     CupertinoTextField(
                       // controller: _txtMail,
                       prefix: Icon(
@@ -76,7 +82,7 @@ class WidgetsScreen extends StatelessWidget {
                       placeholder: 'Password',
                     ),
                     Container(
-                      height: 40,
+                      height: 1.0,
                       color: CupertinoColors.lightBackgroundGray,
                       alignment: Alignment.centerLeft,
                       padding: EdgeInsets.symmetric(horizontal: 40.0),
