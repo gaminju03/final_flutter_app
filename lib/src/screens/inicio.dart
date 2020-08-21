@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class WidgetsScreen extends StatelessWidget {
-  const WidgetsScreen({Key key}) : super(key: key);
+  final formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -23,9 +23,28 @@ class WidgetsScreen extends StatelessWidget {
                 ),
                 child: Column(
                   children: <Widget>[
+                    Divider(),
+                    CircleAvatar(
+                      backgroundImage: AssetImage('assets/juan.jpg'),
+                      radius: 100,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(5.0),
+                      ),
+                      child: Text(
+                        '  Juan Gamiño  ',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    Divider(),
                     Container(
                       height: 40.0,
-                      // color: CupertinoColors.lightBackgroundGray,
                       alignment: Alignment.center,
                       padding: EdgeInsets.symmetric(horizontal: 20.0),
                       child: Text(
@@ -42,7 +61,6 @@ class WidgetsScreen extends StatelessWidget {
                       padding: EdgeInsets.symmetric(horizontal: 40.0),
                     ),
                     CupertinoTextField(
-                      // controller: _txtMail,
                       prefix: Icon(
                         CupertinoIcons.mail_solid,
                         color: CupertinoColors.lightBackgroundGray,
@@ -91,6 +109,31 @@ class WidgetsScreen extends StatelessWidget {
                       child: Text('Ingresar'),
                       onPressed: () => _showDialog(context),
                     ),
+                    Divider(),
+                    Column(children: [
+                      ListTile(
+                        title: Text('Fluter Widgets',
+                            style: TextStyle(fontWeight: FontWeight.w500)),
+                        subtitle: Text('Detalles de los Widgets'),
+                        leading: Icon(
+                          Icons.folder_open,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                    ]),
+                    Column(children: [
+                      ListTile(
+                        title: Text('Fluter Widgets',
+                            style: TextStyle(fontWeight: FontWeight.w500)),
+                        subtitle: Text('Detalles de los Widgets'),
+                        leading: Icon(
+                          Icons.folder_open,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                    ]),
                   ],
                 ),
               ),
