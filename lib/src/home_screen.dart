@@ -1,11 +1,10 @@
-import 'package:final_flutter_app/src/screens/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:final_flutter_app/src/screens/contacto.dart';
-import 'package:final_flutter_app/src/screens/routes/rutas.dart';
 
-import 'package:final_flutter_app/src/screens/inicio.dart';
-//import 'package:proyecto_flutter/src/screens/contacto.dart';
+import 'package:final_flutter_app/src/principal/contacto.dart';
+import 'package:final_flutter_app/src/screens/routes/rutas.dart';
+import 'package:final_flutter_app/src/principal/inicio.dart';
+import 'package:final_flutter_app/src/principal/material.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key key}) : super(key: key);
@@ -40,6 +39,7 @@ class HomeScreen extends StatelessWidget {
                     return MaterialScreen();
                   case 2:
                     return ContactoScreen();
+                  //return FirestoreCRUDPage();
                 }
                 return WidgetsScreen();
               });

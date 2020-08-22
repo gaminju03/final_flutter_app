@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "316520961730",
+    "firebase_url": "https://fir-crud-bae69.firebaseio.com",
+    "project_id": "fir-crud-bae69",
+    "storage_bucket": "fir-crud-bae69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316520961730:android:05c7456648c79cf0edcd5b",
+        "android_client_info": {
+          "package_name": "com.example.final_flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316520961730-urech18cupaq3kc1qu4i5g6onvu62igq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABrXRXu5hATLyx3u06VuIeozdWvmTUeQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316520961730-urech18cupaq3kc1qu4i5g6onvu62igq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

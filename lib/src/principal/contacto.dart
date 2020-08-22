@@ -25,15 +25,109 @@ class ContactoScreen extends StatelessWidget {
                   children: <Widget>[
                     Container(
                       height: 40.0,
-                      // color: CupertinoColors.lightBackgroundGray,
                       alignment: Alignment.center,
                       padding: EdgeInsets.symmetric(horizontal: 20.0),
                       child: Text(
-                        'Ingresa Correo y Contraseña:',
+                        'Ingresa tus datos:',
                         style: CupertinoTheme.of(context)
                             .textTheme
                             .navTitleTextStyle,
                       ),
+                    ),
+                    Container(
+                      height: 2.0,
+                      color: CupertinoColors.lightBackgroundGray,
+                      alignment: Alignment.centerLeft,
+                      padding: EdgeInsets.symmetric(horizontal: 40.0),
+                    ),
+                    CupertinoTextField(
+                      prefix: Icon(
+                        CupertinoIcons.person,
+                        color: CupertinoColors.lightBackgroundGray,
+                        size: 28.0,
+                      ),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 6.0, vertical: 12.0),
+                      clearButtonMode: OverlayVisibilityMode.editing,
+                      keyboardType: TextInputType.emailAddress,
+                      autocorrect: false,
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                              width: 0.0, color: CupertinoColors.inactiveGray),
+                        ),
+                      ),
+                      placeholder: 'Nombre',
+                    ),
+                    CupertinoTextField(
+                      prefix: Icon(
+                        CupertinoIcons.mail,
+                        color: CupertinoColors.lightBackgroundGray,
+                        size: 28.0,
+                      ),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 6.0, vertical: 12.0),
+                      clearButtonMode: OverlayVisibilityMode.editing,
+                      keyboardType: TextInputType.number,
+                      autocorrect: false,
+                      obscureText: false,
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                              width: 0.0, color: CupertinoColors.inactiveGray),
+                        ),
+                      ),
+                      placeholder: 'Email',
+                    ),
+                    CupertinoTextField(
+                      prefix: Icon(
+                        CupertinoIcons.phone,
+                        color: CupertinoColors.lightBackgroundGray,
+                        size: 28.0,
+                      ),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 6.0, vertical: 12.0),
+                      clearButtonMode: OverlayVisibilityMode.editing,
+                      keyboardType: TextInputType.number,
+                      autocorrect: false,
+                      obscureText: false,
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                              width: 0.0, color: CupertinoColors.inactiveGray),
+                        ),
+                      ),
+                      placeholder: 'Telefono',
+                    ),
+                    CupertinoTextField(
+                      prefix: Icon(
+                        CupertinoIcons.news,
+                        color: CupertinoColors.lightBackgroundGray,
+                        size: 28.0,
+                      ),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 6.0, vertical: 12.0),
+                      clearButtonMode: OverlayVisibilityMode.editing,
+                      keyboardType: TextInputType.number,
+                      autocorrect: false,
+                      obscureText: false,
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                              width: 0.0, color: CupertinoColors.inactiveGray),
+                        ),
+                      ),
+                      placeholder: 'Comentario',
+                    ),
+                    Container(
+                      height: 1.0,
+                      color: CupertinoColors.lightBackgroundGray,
+                      alignment: Alignment.centerLeft,
+                      padding: EdgeInsets.symmetric(horizontal: 40.0),
+                    ),
+                    CupertinoButton(
+                      child: Text('Ingresar'),
+                      onPressed: () {},
                     ),
                   ],
                 ),
